@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="section">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+        "
+      >
+        <p style="font-size: 16px; width: 60%; text-align: center">
+          Start Blocking:
+        </p>
+        <div style="width: 40%;text-align: center;">
+          <!-- <button class="button" id="button">Start</button> -->
+          <label class="switch">
+            <input id="switch" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="sub-section">
+       
+        <p style="text-align: center; font-size: 15px; font-weight: 400">
+          Add url to blocklist (Eg: https://www.youtube.com)
+        </p>
+        <div>
+          <input id="url-input" type="text" placeholder="Enter the url" />
+          <button class="submit-button" id="submit">Submit</button>
+        </div>
+        <p id="error" style="color:rgb(208, 38, 38);display: none;">Invalid Url</p> 
+      </div>
+      <div>
+        <h3 style="text-align: center;">Block List (Click on the link to remove)</h3>
+        <div id="block-list" class="sub-section">
+        </div>
+      </div>
+      <p style="text-align: center; width: 90%;">Kindly refresh the page after unblocking/deleting</p>
+    </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Booster",
+  "version": "1.0",
+  "description": "Add websites to block them to boost your productivity while working.",
+  "action": {
+    "default_title": "Productivity Booster",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"]
+}
